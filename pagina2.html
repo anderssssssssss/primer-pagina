@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Solar</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleToolbar() {
+    const menu = document.getElementById('toolbarMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Cierra el menú si haces clic fuera
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('toolbarMenu');
+    const button = document.querySelector('.toolbar-button');
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+<body>
+
+
+   <header>
+ 
+  <button class="toolbar-button" onclick="toggleToolbar()">indice</button>
+  <div class="toolbar-menu" id="toolbarMenu">
+   <a href="index.html">1. Inicio</a>
+    <a href="pagina2.html">2. Energia solar</a>
+    <a href="pagina3.html">3. energia Eolica</a>
+    <a href="pagina4.html">4. Energia Hidraulica</a>
+    <a href="pagina5.html">5. Energia Geometrica</a>
+    <a href="pagina6.html">6. Energia Mareomotriz</a>
+    <a href="pagina7.html">7. Energia de Biomasa</a>
+    <a href="pagina8.html">8. Energía Nuclear</a>
+    <a href="pagina9.html">9. Energía Quimica</a>
+    <a href="pagina10.html">10. Energia Cincetica</a>
+    <a href="pagina11.html">11. Energia Potencial</a>
+    <a href="pagina12.html">12. Energia Electrica</a>
+    <a href="pagina13.html">13. Energia Termica</a>
+
+  </div>
+</header>
+
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('solar')">¿Que es la energía Solar?</button>
+      <button onclick="mostrarSeccion('ventajas')">Ventajas y Desventajas</button>
+      <button onclick="mostrarSeccion('aplicaciones')">ejemplos</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+        <div class="left-column">
+         <div id="seccion1" class="seccion">
+  <h2>ENERGIA SOLAR</h2>
+  <div style="text-align: center;">
+    <img src="https://th.bing.com/th/id/OIP.Dpc9CuhH9p4YrCQG6ZJiVgHaEa?w=294&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+         alt="Paneles solares" 
+         style="max-width: 100%; width: 400px; border-radius: 8px;" />
+  </div>
+</div>
+                            <div class="right-column">
+          <div id="solar" class="section">
+            <h2 align="center">¿Qué es la Energía Solar?</h2>
+            <p align="justify">La energía solar es la principal de nuestros sistemas climáticos y de las fuentes de energía de la Tierra. Una cantidad de radiación solar llega a la superficie del planeta cada hora para cubrir nuestras necesidades energéticas globales durante casi un año entero. Una de las características que definen qué es la energía solar es que puede aprovecharse y reconvertirse para su uso mediante colectores solares o fotovoltaicos.</p>
+<div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.0uD27AwBoVRBt58qaN4mnwHaHa?w=185&h=185&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+        alt="Eolicos" 
+         style="max-width: 100%; width:200px; border-radius: 8px;" />
+  </div>
+<p align="justify">Posee un carácter inagotable, lo que la convierte en uno de los recursos renovables más beneficiosos. Su impacto medioambiental es mínimo, puesto que no produce residuos ni emite gases de efecto invernadero. No obstante, cuenta muchas ventajas y algunas desventajas. Por ejemplo, un factor negativo es la dependencia de la cantidad de luz solar que incide a la superficie en cada zona del planeta. El sol no llega de manera similar en todas las partes del mundo.</p>
+          </div>
+        </div>
+
+      
+          <div id="ventajas" class="section">
+            <h2>Ventajas</h2>
+            <ul>
+              <li>Es un tipo de energía renovable e inagotable, ya que el Sol es una fuente constante y disponible todos los días.</li>
+              <li>Después de la inversión inicial en equipos, los costos operativos son bajos, lo que genera ahorros a largo plazo.</li>
+              <li>Los sistemas solares requieren un mantenimiento mínimo, lo que los hace fáciles de operar. Puede adaptarse a diferentes tamaños, desde pequeñas instalaciones residenciales hasta grandes plantas solares industriales.</li>
+              <li>l sector de la energía solar genera empleo en la fabricación, instalación y mantenimiento de sistemas solares.</li>
+            </ul>
+           <h2>Desventajas</h2>
+            <ul>
+              <li>La producción de energía solar depende de la disponibilidad de luz solar, lo que puede verse afectado por condiciones climáticas adversas o estaciones nubladas.</li>
+              <li>La energía solar solo está disponible durante el día, lo que limita su capacidad de generar electricidad de manera continua, especialmente en la noche.</li>
+              <li>Para generar grandes cantidades de energía, se necesitan amplias superficies para instalar paneles solares, lo que puede ser un inconveniente en áreas urbanas o con espacio limitado.</li>
+              <li>La producción de paneles solares implica el uso de materiales como silicio y otros metales, cuyo proceso de extracción y fabricación puede tener impactos ambientales.</li>
+            </ul>
+
+          </div>
+
+          <div id="aplicaciones" class="section"> 
+            
+            <ul>
+<h2>Ejemplos</h2>
+<p align="justify">Células fotovoltaicas. También conocidas como células fotoeléctricas o celdas solares. Son dispositivos que transforman la energía de la radiación solar en energía eléctrica. Cada célula fotovoltaica está hecha con un material semiconductor, por lo general, silicio. El semiconductor absorbe la luz solar y emite electrones. Estos, al ser capturados en un campo eléctrico, generan una corriente eléctrica. Los paneles solares, instalados en techos, azoteas o grandes extensiones de terreno libre, están compuestos por montones de células fotovoltaicas.</p>
+    
+  </ul>      
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleToolbar() {
+      const menu = document.getElementById('toolbarMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('toolbarMenu');
+      const button = document.querySelector('.toolbar-button');
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Cinética</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body onload="mostrarSeccion('ciencia')">
+
+  <header>
+    TIPOS DE ENERGIA
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('ciencia')">¿Qué dice la ciencia sobre la energía?</button>
+      <button onclick="mostrarSeccion('indice')">Índice</button>
+      <button onclick="mostrarSeccion('comentarios')">Comentarios</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+
+        <!-- SECCIÓN CIENCIA -->
+        <div id="ciencia" class="section active">
+          <h2 align="center">¿QUE ES LA ENERGIA SEGUN LA FISICA?</h2>
+          <p align="justify">En términos simples, la energía se define como la capacidad de realizar trabajo. En física, el trabajo se refiere a la aplicación de una fuerza a través de una distancia. La energía es, por tanto, una medida de la capacidad de un sistema para efectuar cambios o realizar tareas. Esta definición se basa en el trabajo mecánico, pero la energía se manifiesta de muchas otras formas, que son fundamentales para comprender el funcionamiento del universo</p>
+          <div style="text-align: center;">
+            <img src="https://descargas.intef.es/recursos_educativos/It_didac/CCNN/4/07/La_energia/Los_tipos_de_energia_(500%20%20500%20px).png" 
+                 alt="Eolicos" 
+                 style="max-width: 100%; width:500px; border-radius: 8px;" />
+          </div>
+          <p align="justify">Existen varias formas de energía, cada una con sus características y aplicaciones específicas. Buena parte de los esfuerzos de las ciencias y las ingenierías modernas buscan maneras eficientes de transformar un tipo de energía en otro que pueda ser aprovechado por las actividades humanas. Esto es importante, porque uno de los principios básicos de la Física es que la energía no puede surgir de la nada, sino que debe surgir a partir de energía preexistente.</p>
+        </div>
+
+        <!-- SECCIÓN ÍNDICE -->
+        <div id="indice" class="section">
+          <div class="indice-wrapper">
+            <div class="indice-texto">
+              <h2>¿Qué tipo de energía te gustaría conocer?</h2>
+            </div>
+            <div class="indice-cuadro">
+              <h2>Índice de Energías</h2>
+              <a href="pagina2.html">2. Energia solar</a>
+              <a href="pagina3.html">3. energia Eolica</a>
+              <a href="pagina4.html">4. Energia Hidraulica</a>
+              <a href="pagina5.html">5. Energia Geometrica</a>
+              <a href="pagina6.html">6. Energia Mareomotriz</a>
+              <a href="pagina7.html">7. Energia de Biomasa</a>
+              <a href="pagina8.html">8. Energía Nuclear</a>
+              <a href="pagina9.html">9. Energía Quimica</a>
+              <a href="pagina10.html">10. Energia Cincetica</a>
+              <a href="pagina11.html">11. Energia Potencial</a>
+              <a href="pagina12.html">12. Energia Electrica</a>
+              <a href="pagina13.html">13. Energia Termica</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECCIÓN COMENTARIOS -->
+<div id="comentarios" class="section">
+  <h2 align="center">Deja tu comentario</h2>
+
+  <form action="https://formsubmit.co/anderson.para.gogle@gmail.com" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 500px; margin: 0 auto;">
+    
+    <!-- Nombre -->
+    <div style="display: flex; flex-direction: column;">
+      <label for="nombre">Nombre:</label>
+      <input type="text" name="nombre" id="nombre" required style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+    </div>
+
+    <!-- Comentario -->
+    <div style="display: flex; flex-direction: column;">
+      <label for="comentario">Comentario:</label>
+      <textarea name="comentario" id="comentario" rows="4" required style="padding: 8px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+    </div>
+
+    <!-- Calificación -->
+    <div style="display: flex; flex-direction: column;">
+      <label>Calificación:</label>
+      <div class="rating" style="display: flex; gap: 5px; font-size: 24px;">
+        <input type="radio" id="estrella5" name="calificacion" value="5 estrellas" required><label for="estrella5">★</label>
+        <input type="radio" id="estrella4" name="calificacion" value="4 estrellas"><label for="estrella4">★</label>
+        <input type="radio" id="estrella3" name="calificacion" value="3 estrellas"><label for="estrella3">★</label>
+        <input type="radio" id="estrella2" name="calificacion" value="2 estrellas"><label for="estrella2">★</label>
+        <input type="radio" id="estrella1" name="calificacion" value="1 estrella"><label for="estrella1">★</label>
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div style="display: flex; gap: 10px;">
+      <button type="submit" style="flex: 1; padding: 10px; background-color: #4CAF50; color: white; border: none; border-radius: 5px;">Enviar</button>
+      <button type="reset" style="flex: 1; padding: 10px; background-color: #c62828; color: white; border: none; border-radius: 5px;">Borrar</button>
+    </div>
+
+    <!-- Configuraciones ocultas -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+  </form>
+</div>
+  </script>
+</body>
+</html>

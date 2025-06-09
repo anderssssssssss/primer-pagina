@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Geometrica</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleToolbar() {
+    const menu = document.getElementById('toolbarMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Cierra el menú si haces clic fuera
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('toolbarMenu');
+    const button = document.querySelector('.toolbar-button');
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+<body>
+
+   <header>
+
+  <button class="toolbar-button" onclick="toggleToolbar()">indice</button>
+
+  <div class="toolbar-menu" id="toolbarMenu">
+    <a href="index.html">1. Inicio</a>
+    <a href="pagina2.html">2. Energia solar</a>
+    <a href="pagina3.html">3. energia Eolica</a>
+    <a href="pagina4.html">4. Energia Hidraulica</a>
+    <a href="pagina5.html">5. Energia Geometrica</a>
+    <a href="pagina6.html">6. Energia Mareomotriz</a>
+    <a href="pagina7.html">7. Energia de Biomasa</a>
+    <a href="pagina8.html">8. Energía Nuclear</a>
+    <a href="pagina9.html">9. Energía Quimica</a>
+    <a href="pagina10.html">10. Energia Cincetica</a>
+    <a href="pagina11.html">11. Energia Potencial</a>
+    <a href="pagina12.html">12. Energia Electrica</a>
+    <a href="pagina13.html">13. Energia Termica</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('solar')">¿Que es la Energía Nuclear?</button>
+      <button onclick="mostrarSeccion('ventajas')">Ventajas y Desventajas</button>
+      <button onclick="mostrarSeccion('aplicaciones')">Ejemplos</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+        <div class="left-column">
+         <div id="seccion1" class="seccion">
+  <h2>ENERGIA NUCLEAR</h2>
+  <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP._6gKhV_BmjyBXVQCYGrW0gHaE1?w=285&h=186&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Eolicos" 
+         style="max-width: 100%; width:500px; border-radius: 8px;" />
+  </div>
+</div>
+                            <div class="right-column">
+          <div id="solar" class="section">
+            <h2 align="center">¿Qué es la Energía Nuclear?</h2>
+            <p align="justify">La energía nuclear o energía atómica es la resultante de las reacciones que ocurren en los núcleos atómicos o entre ellos, es decir, es la energía liberada en las reacciones nucleares. Estas reacciones pueden ocurrir de manera espontánea o artificial.
+Las reacciones nucleares son procesos de combinación o fragmentación de los núcleos de los átomos y partículas subatómicas. Los núcleos atómicos pueden combinarse o fragmentarse, de manera que liberan o absorben grandes cantidades de energía en el proceso. Cuando los núcleos se fragmentan, el proceso se conoce como fisión nuclear, y cuando se combinan se denomina fusión nuclear.</p>
+ <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.jAAEXkLHql6j8A9pyNSxZAHaHa?w=207&h=207&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3n" 
+        alt="Geo" 
+         style="max-width: 100%; width:200px; border-radius: 8px;" />
+  </div>
+<p align="justify">La energía liberada en las reacciones nucleares puede ser empleada para la generación de electricidad en las centrales termonucleares, en medicina nuclear, en la industria, en la minería, en la arqueología y en muchas otras aplicaciones.
+Su principal utilización está en la generación de energía eléctrica, donde la energía nuclear se usa para calentar grandes volúmenes de agua o para generar gases, cuya energía calórica se utiliza luego para mover grandes turbinas que producen electricidad.</p>
+
+                </div>
+        </div>
+
+      
+          <div id="ventajas" class="section">
+            <h2>Ventajas</h2>
+             <p align="justify">Los usos pacíficos de la energía nuclear son numerosos, no solo para la generación de electricidad (lo cual es ya de una importancia enorme en el mundo industrializado de hoy) sino además para la producción de energía calórica aprovechable y reconducible, o de energía mecánica, e incluso de formas de radiación ionizante aprovechable para esterilizar material médico o quirúrgico. También se usa para propulsar vehículos, como los submarinos atómicos.</p>
+            <ul>
+              <li>Poco contaminante. Siempre y cuando no haya accidentes y se disponga de manera adecuada de los residuos radiactivos, las centrales nucleares contaminan menos el ambiente que la quema de combustibles fósiles.</li>
+               <li>Segura. Siempre y cuando se cumplan los requisitos de seguridad, la energía nuclear puede ser confiable, constante y limpia</li>
+               <li>Eficiente. Las cantidades de energía liberadas mediante este tipo de reacciones nucleares son masivas, en comparación con la cantidad de materia prima que demandan.</li>
+               </ul>
+           <h2>Desventajas</h2>
+            <ul>
+              <li>Riesgosa. En casos de accidentes, como el ocurrido con el reactor nuclear de Chernóbil en la antigua Unión Soviética, la población civil e incluso la vida animal corren un alto peligro de contaminación radiactiva.</li>
+              <li>Desecho. Los subproductos radiactivos de las centrales nucleares son de difícil manejo y algunos tienen una vida media (tiempo que tarda un átomo radiactivo en desintegrarse) muy prolongada.</li>
+               <li>Costosa. La creación de centrales nucleares y el uso de esta tecnología suele ser muy costosa.</li>
+            </ul>
+
+          </div>
+
+          <div id="aplicaciones" class="section">
+           
+            <ul>
+<h2>Ejemplos</h2>
+<p align="justify">Un ejemplo pacífico del uso de esta energía lo constituye cualquier central nuclear de electricidad, como la de Ikata, en Japón. Un ejemplo de su uso bélico fue el bombardeo de las ciudades japonesas de Hiroshima y Nagasaki en 1945 durante la Segunda Guerra Mundial.
+</p>
+
+  </ul>      
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleToolbar() {
+      const menu = document.getElementById('toolbarMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('toolbarMenu');
+      const button = document.querySelector('.toolbar-button');
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Geometrica</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleToolbar() {
+    const menu = document.getElementById('toolbarMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Cierra el menú si haces clic fuera
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('toolbarMenu');
+    const button = document.querySelector('.toolbar-button');
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+<body>
+
+   <header>
+
+  <button class="toolbar-button" onclick="toggleToolbar()">indice</button>
+
+  <div class="toolbar-menu" id="toolbarMenu">
+    <a href="index.html">1. Inicio</a>
+    <a href="pagina2.html">2. Energia solar</a>
+    <a href="pagina3.html">3. energia Eolica</a>
+    <a href="pagina4.html">4. Energia Hidraulica</a>
+    <a href="pagina5.html">5. Energia Geometrica</a>
+    <a href="pagina6.html">6. Energia Mareomotriz</a>
+    <a href="pagina7.html">7. Energia de Biomasa</a>
+    <a href="pagina8.html">8. Energía Nuclear</a>
+    <a href="pagina9.html">9. Energía Quimica</a>
+    <a href="pagina10.html">10. Energuia Cincetica</a>
+    <a href="pagina11.html">11. Energia Potencial</a>
+    <a href="pagina12.html">12. Energia Electrica</a>
+    <a href="pagina13.html">13. Energia Termica</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('solar')">¿Que es la energía Biomasa?</button>
+      <button onclick="mostrarSeccion('ventajas')">Ventajas y Desventajas</button>
+      <button onclick="mostrarSeccion('aplicaciones')">Ejemplos</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+        <div class="left-column">
+         <div id="seccion1" class="seccion">
+  <h2>ENERGIA BIOMASA</h2>
+  <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.eoIJx5djkiaVhPgb2v36iwHaEK?w=296&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Eolicos" 
+         style="max-width: 100%; width:500px; border-radius: 8px;" />
+  </div>
+</div>
+                            <div class="right-column">
+          <div id="solar" class="section">
+            <h2 align="center">¿Qué es la Energía Biomasa?</h2>
+            <p align="justify">La biomasa es la unidad de materia orgánica que se utiliza como fuente de energía. Esta materia puede ser proveniente de animales o de plantas, incluyendo residuos orgánicos. La biomasa es más económica que los tipos convencionales de energía, que se producen a partir de combustibles fósiles. Además, es una fuente de energía renovable, más segura y más limpia que los combustibles tradicionales ya que por su forma de combustión emite menos gases dañinos al medio ambiente.</p>
+ <div style="text-align: center;">
+      <img src="https://th.bing.com/th?q=Iconos+De+Biomasa&w=120&h=120&c=1&rs=1&qlt=70&r=0&o=7&cb=1&dpr=1.3&pid=InlineBlock&rm=3&mkt=es-MX&cc=MX&setlang=es&adlt=moderate&t=1&mw=247" 
+        alt="Geo" 
+         style="max-width: 100%; width:200px; border-radius: 8px;" />
+  </div>
+<p align="justify">La biomasa suele utilizarse para la calefacción de espacios cerrados, para calentar agua o para generar electricidad o calor. Se la usa tanto en el ámbito doméstico como en el industrial. Además, actualmente a partir de la biomasa se pueden producir biocombustibles, como el bioetanol o biobutanol</p>
+
+           </div>
+        </div>
+
+      
+          <div id="ventajas" class="section">
+            <h2>Ventajas</h2>
+            <ul>
+              <li>Se trata de una fuente de energía renovable.</li>
+<li>No significa un impacto mayor al efecto invernadero, puesto que cuando se utiliza como combustible provoca menor emisión de gases dañinos para el medio ambiente.</li>
+<li>Es bastante económica.<li>
+                              </ul>
+           <h2>Desventajas</h2>
+            <ul>
+              <li>Puede encarecer el precio de algunos alimentos que consumen las personas y los animales porque se destinan ciertos cultivos para la producción de esta fuente de energía.</li>
+              <li>Se requiere de grandes terrenos disponibles para su producción y para su posterior almacenamiento..</li>
+            </ul>
+
+          </div>
+
+          <div id="aplicaciones" class="section">
+            <ul>
+<h2>Ejemplos</h2>
+<p align="justify">Cuando la biomasa se transforma y genera electricidad, biocombustibles o calefacción, se habla de “bioenergía”. Por ejemplo, cuando se utilizan restos orgánicos para la calefacción, bioetanol o biodiésel para la automoción, bioqueroseno para aviones, vapor o calor en el ámbito industrial o biocarburantes para el transporte.
+</p>
+  </ul>      
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleToolbar() {
+      const menu = document.getElementById('toolbarMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('toolbarMenu');
+      const button = document.querySelector('.toolbar-button');
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>

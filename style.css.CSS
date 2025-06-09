@@ -1,0 +1,227 @@
+ <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* Barra superior */
+    header {
+      background-color: #2e7d32;
+      color: #ffffff;
+      padding: 50px 20px;
+      text-align: center;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 32px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    /* Botón de herramientas (3 puntos) */
+    .toolbar-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+.toolbar-menu {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  background: rgb(255, 255, 255);
+  border: 1px solid #ffffff;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 220px;
+}
+
+.toolbar-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: black;
+  display: block;
+}
+
+.toolbar-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+
+    /* Contenedor principal */
+    .main-container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* Barra lateral */
+    nav {
+      width: 100px;
+      background-color: #2e7d32;
+      color: white;
+      padding: 20px 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav button {
+      background: none;
+      border: none;
+      color: white;
+      text-align: left;
+      padding: 12px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    nav button:hover {
+      background-color: #555;
+    }
+
+    /* Área de contenido */
+    .content {
+      flex: 1;
+      padding: 40px;
+      background-color: beige;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+    }
+
+    /* Contenedor tipo hoja */
+    .paper {
+      background: white;
+      width: 100%;
+      max-width: 900px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 30px;
+      border-radius: 6px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+    p, ul {
+      line-height: 1.6;
+    }
+.indice-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px; /* Espacio entre el texto y el índice */
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+
+/* Texto al costado del índice */
+.indice-texto {
+  max-width: 500px;
+  text-align: center;
+}
+
+.indice-texto h2 {
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  color: #000000;
+}
+
+/* Estilo del índice */
+.indice-cuadro {
+  border: 2px solid #2e7d32;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  width: 280px;
+  text-align: left;
+}
+
+.indice-cuadro h2 {
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+.indice-cuadro a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #2e7d32;
+  font-weight: bold;
+}
+
+.indice-cuadro a:hover {
+  color: #1b5e20;
+  text-decoration: underline;
+}
+  /* Estilos para el formulario de comentarios */
+    .formulario-contacto input,
+    .formulario-contacto textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    .formulario-contacto label {
+      font-weight: bold;
+      display: block;
+      margin-top: 15px;
+      color: #2e7d32;
+    }
+
+    .rating {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      gap: 5px;
+      margin-top: 8px;
+    }
+
+    .rating input {
+      display: none;
+    }
+
+    .rating label {
+      font-size: 24px;
+      color: lightgray;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .rating input:checked ~ label,
+    .rating label:hover,
+    .rating label:hover ~ label {
+      color: gold;
+    }
+  </style>
+  

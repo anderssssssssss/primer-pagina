@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Cinetica</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleToolbar() {
+    const menu = document.getElementById('toolbarMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Cierra el menú si haces clic fuera
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('toolbarMenu');
+    const button = document.querySelector('.toolbar-button');
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+<body>
+
+   <header>
+
+  <button class="toolbar-button" onclick="toggleToolbar()">indice</button>
+
+  <div class="toolbar-menu" id="toolbarMenu">
+    <a href="pagina1.html">1. Inicio</a>
+    <a href="pagina2.html">2. Energia solar</a>
+    <a href="pagina3.html">3. energia Eolica</a>
+    <a href="pagina4.html">4. Energia Hidraulica</a>
+    <a href="pagina5.html">5. Energia Geometrica</a>
+    <a href="pagina6.html">6. Energia Mareomotriz</a>
+    <a href="pagina7.html">7. Energia de Biomasa</a>
+    <a href="pagina8.html">8. Energía Nuclear</a>
+    <a href="pagina9.html">9. Energía Quimica</a>
+    <a href="pagina10.html">10. Energia Cincetica</a>
+    <a href="pagina11.html">11. Energia Potencial</a>
+    <a href="pagina12.html">12. Energia Electrica</a>
+    <a href="pagina13.html">13. Energia Termica</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('solar')">¿Que es la energía Cinetica?</button>
+      <button onclick="mostrarSeccion('ventajas')">Ventajas y Desventajas</button>
+      <button onclick="mostrarSeccion('aplicaciones')">Ejemplos</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+        <div class="left-column">
+         <div id="seccion1" class="seccion">
+  <h2>ENERGIA CINETICA</h2>
+  <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.p1XBPxKKMfOdMD9_jX_64gHaEj?w=281&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Eolicos" 
+         style="max-width: 100%; width:500px; border-radius: 8px;" />
+  </div>
+</div>
+                            <div class="right-column">
+          <div id="solar" class="section">
+            <h2 align="center">¿Qué es la Energía QUIMICA?</h2>
+            <p align="justify">La energía cinética es aquella energía que posee un cuerpo o sistema debido a su movimiento. La física la define como la cantidad de trabajo realizado por todas las fuerzas que actúan sobre un cuerpo con una masa determinada, necesario para acelerarlo desde una velocidad inicial hasta otra velocidad final.   Una vez alcanzada dicha velocidad, según la Ley de la inercia, la cantidad de energía cinética acumulada permanecerá constante, es decir, no variará, a menos que otra fuerza nuevamente actúe sobre el cuerpo, ejerciendo un trabajo sobre él, cambiando su velocidad y, por lo tanto, su energía cinética.</p>
+ <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.enKHVw4D_aFx-OzvHJMkOQHaHR?w=177&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Geo" 
+         style="max-width: 100%; width:200px; border-radius: 8px;" />
+     </div>
+        </div>
+
+      
+          <div id="ventajas" class="section">
+            <h2>Ventajas</h2>
+            <ul>
+              <li>Eficiencia en la Producción de Energía: En sistemas como las turbinas eólicas e hidroeléctricas, aprovecha eficientemente el movimiento para generar electricidad.</li>
+                <li>Generación Sostenible: La energía cinética de fuentes renovables, como el viento y el agua, ofrece una opción de energía sostenible y respetuosa con el medio ambiente.</li>
+                  <li>Impulso de Innovación: El deseo de mejorar la eficiencia en la captación de energía cinética impulsa la innovación en tecnologías verdes.</li>
+                              </ul>
+           <h2>Desventajas</h2>
+            <ul>
+              <li>Dependencia de Factores Ambientales: La generación de energía a partir de fuentes cinéticas naturales depende del clima y la geografía.</li>
+              <li>Costos Iniciales Elevados: La inversión en infraestructuras como turbinas eólicas o hidroeléctricas puede ser significativa.</li>
+               <li>Impacto Ambiental: La construcción de infraestructuras puede tener efectos adversos sobre el entorno local, como la alteración de hábitats acuáticos.</li>
+            </ul>
+
+          </div>
+
+          <div id="aplicaciones" class="section">
+            <h2>Ejemplos</h2>
+            <ul>
+<h2>Ejemplos</h2>
+<p align="justify">Arrojar una pelota por el aire. Imprimimos fuerza a una pelota para arrojarla por los aires, dejando que caiga por obra de la gravedad. Al hacerlo, adquirirá una energía cinética que, cuando otro jugador la ataje, deberá compensar con un trabajo de igual magnitud, si desea atajarla y retenerla.
+</p>
+<p align="justify">Un vagón de montaña rusa. El vagón de una montaña rusa de un parque de atracciones presentará una energía potencial hasta el instante mismo en que empiece a caer, y su velocidad y masa le impriman una creciente energía cinética. Esta última será mayor si el vagón está lleno que si está vacío (pues habrá mayor masa).</p>
+  </ul>      
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleToolbar() {
+      const menu = document.getElementById('toolbarMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('toolbarMenu');
+      const button = document.querySelector('.toolbar-button');
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>

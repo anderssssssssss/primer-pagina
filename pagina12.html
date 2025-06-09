@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Geometrica</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleToolbar() {
+    const menu = document.getElementById('toolbarMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Cierra el menú si haces clic fuera
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('toolbarMenu');
+    const button = document.querySelector('.toolbar-button');
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+<body>
+
+   <header>
+
+  <button class="toolbar-button" onclick="toggleToolbar()">indice</button>
+
+  <div class="toolbar-menu" id="toolbarMenu">
+    <a href="index.html">1. Inicio</a>
+    <a href="pagina2.html">2. Energia solar</a>
+    <a href="pagina3.html">3. energia Eolica</a>
+    <a href="pagina4.html">4. Energia Hidraulica</a>
+    <a href="pagina5.html">5. Energia Geometrica</a>
+    <a href="pagina6.html">6. Energia Mareomotriz</a>
+    <a href="pagina7.html">7. Energia de Biomasa</a>
+    <a href="pagina8.html">8. Energía Nuclear</a>
+    <a href="pagina9.html">9. Energía Quimica</a>
+    <a href="pagina10.html">10. Energia Cincetica</a>
+    <a href="pagina11.html">11. Energia Potencial</a>
+    <a href="pagina12.html">12. Energia Electrica</a>
+    <a href="pagina13.html">13. Energia Termica</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('solar')">¿Que es la energía Electrica?</button>
+      <button onclick="mostrarSeccion('ventajas')">Ventajas y Desventajas</button>
+      <button onclick="mostrarSeccion('aplicaciones')">Ejemplos</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+        <div class="left-column">
+         <div id="seccion1" class="seccion">
+  <h2>ENERGIA ELECTRICA</h2>
+  <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.b4wk7w0UOoPjioCIAiq55gHaE8?w=284&h=189&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Eolicos" 
+         style="max-width: 100%; width:500px; border-radius: 8px;" />
+  </div>
+</div>
+                            <div class="right-column">
+          <div id="solar" class="section">
+            <h2 align="center">¿Qué es la Energía electrica?</h2>
+            <p align="justify">La energía eléctrica o electricidad es la energía que se origina de la diferencia de potencial eléctrico entre dos puntos determinados, cuando se los pone en contacto mediante un transmisor eléctrico. En la vida cotidiana, la energía eléctrica que consumimos proviene de un tendido o de una red eléctrica, a la cual accedemos mediante enchufes o tomacorrientes, instalados en nuestros hogares, como los que activamos al encender un interruptor de la luz. Esta red es alimentada por las empresas que proveen de dicho servicio, que suelen estar a cargo de la generación y distribución de la electricidad en las ciudades, regiones o países enteros.</p>
+ <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.xrMmlBsWPxHYOHmM0bJ7NAHaH0?w=169&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Geo" 
+         style="max-width: 100%; width:200px; border-radius: 8px;" />
+    </div>
+<p align="justify">Este contacto provoca una corriente eléctrica que consiste en la transmisión de cargas negativas (electrones) a través de un material propicio para ello (como suelen ser los metales) desde el punto de su generación (y/o almacenamiento) hasta el punto de consumo. Usualmente la energía eléctrica es convertida en otras formas de energía: lumínica, mecánica o térmica.</p>
+     </div>
+        </div>
+
+      
+          <div id="ventajas" class="section">
+            <h2>Ventajas</h2>
+            <ul>
+              <li>su capacidad para ser convertida en otras formas de energía es destacable. Los electrodomésticos que utilizan energía eléctrica, como refrigeradores, microondas y computadoras, permiten que las tareas diarias se realicen con mayor eficiencia</li>
+<li> permite la creación de sistemas automatizados que mejoran nuestra calidad de vida. Por ejemplo, en el hogar, los sistemas de domótica utilizan electricidad para controlar luces, temperatura, seguridad y hasta electrodomésticos, todo mediante aplicaciones móviles o sistemas integrados. Esto no solo ahorra tiempo y esfuerzo, sino que también puede resultar en una mayor eficiencia energética.</li>
+                              </ul>
+           <h2>Desventajas</h2>
+            <ul>
+              <li>Riesgos para el medio ambiente: Las plantas eléctricas que queman combustibles fósiles emiten gases contaminantes, contribuyendo al cambio climático.</li>
+<li>Consumo elevado de recursos naturales: La generación de electricidad requiere grandes cantidades de agua, combustibles fósiles u otros recursos que pueden agotarse..</li>
+
+<li>Riesgo de accidentes: El mal manejo de la electricidad o la falta de mantenimiento en los sistemas eléctricos puede causar choques eléctricos, incendios o explosiones.</li>
+
+              
+            </ul>
+
+          </div>
+
+          <div id="aplicaciones" class="section">
+            <ul>
+<h2>Ejemplos</h2>
+<p align="justify">La iluminación urbana. La incorporación de la energía eléctrica a las ciudades supuso toda una revolución, que reemplazó a las farolas de gas y permitió expandir el horario útil de la vida urbana varias horas más.
+</p>
+<p align="justify">Los relámpagos. Durante una tormenta eléctrica, la diferencia de potencial eléctrico entre el suelo y el aire es tal que se generan descargas compensatorias, conocidas como relámpagos. Podemos verlos a simple vista.</p>
+<p align="justify">El uso de un televisor. La electricidad permitió el surgimiento de la televisión así como muchos electrodomésticos alimentados mediante el enchufe a la red eléctrica: licuadoras, microondas, una tostadoras, heladeras, etc.</p>
+
+  </ul>      
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleToolbar() {
+      const menu = document.getElementById('toolbarMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('toolbarMenu');
+      const button = document.querySelector('.toolbar-button');
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>

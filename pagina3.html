@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Energía Eolica</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<script>
+  function toggleToolbar() {
+    const menu = document.getElementById('toolbarMenu');
+    menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+  }
+
+  // Cierra el menú si haces clic fuera
+  document.addEventListener('click', function (e) {
+    const menu = document.getElementById('toolbarMenu');
+    const button = document.querySelector('.toolbar-button');
+    if (!menu.contains(e.target) && !button.contains(e.target)) {
+      menu.style.display = 'none';
+    }
+  });
+</script>
+
+<body>
+
+   <header>
+
+  <button class="toolbar-button" onclick="toggleToolbar()">indice</button>
+
+  <div class="toolbar-menu" id="toolbarMenu">
+    <a href="index.html">1. Inicio</a>
+    <a href="pagina2.html">2. Energia solar</a>
+    <a href="pagina3.html">3. energia Eolica</a>
+    <a href="pagina4.html">4. Energia Hidraulica</a>
+    <a href="pagina5.html">5. Energia Geometrica</a>
+    <a href="pagina6.html">6. Energia Mareomotriz</a>
+    <a href="pagina7.html">7. Energia de Biomasa</a>
+    <a href="pagina8.html">8. Energía Nuclear</a>
+    <a href="pagina9.html">9. Energía Quimica</a>
+    <a href="pagina10.html">10. Energia Cincetica</a>
+    <a href="pagina11.html">11. Energia Potencial</a>
+    <a href="pagina12.html">12. Energia Electrica</a>
+    <a href="pagina13.html">13. Energia Termica</a>
+  </div>
+</header>
+
+  </header>
+
+  <div class="main-container">
+    <nav>
+      <button onclick="mostrarSeccion('solar')">¿Que es la energía Eolica?</button>
+      <button onclick="mostrarSeccion('ventajas')">Ventajas y Desventajas</button>
+      <button onclick="mostrarSeccion('aplicaciones')">fuentes confiables</button>
+    </nav>
+
+    <div class="content">
+      <div class="paper">
+        <div class="left-column">
+         <div id="seccion1" class="seccion">
+  <h2>ENERGIA EOLICA</h2>
+  <div style="text-align: center;">
+      <img src="https://concepto.de/wp-content/uploads/2012/03/proteccion-del-medio-ambiente-e1504577536551.jpeg" 
+        alt="Eolicos" 
+         style="max-width: 100%; width:500px; border-radius: 8px;" />
+  </div>
+</div>
+                            <div class="right-column">
+          <div id="solar" class="section">
+            <h2 align="center">¿Qué es la Energía Eolica?</h2>
+            <p align="justify">La energía eólica es aquella energía obtenida mediante el aprovechamiento de la fuerza del viento. Su nombre proviene del nombre del dios del viento, Eolo, de acuerdo a la mitología de la Grecia antigua</p>
+ <div style="text-align: center;">
+      <img src="https://th.bing.com/th/id/OIP.IGHT2L7UpSvltmLo-Gq95AHaHa?w=169&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" 
+        alt="Eolicos" 
+         style="max-width: 100%; width:200px; border-radius: 8px;" />
+  </div>
+<p align="justify">El viento contiene mayores o menores índices de energía cinética, que mediante un sistema de aspas y turbinas puede convertirse en energía eléctrica, para así alimentar ciudades, complejos industriales o viviendas rurales. Sobre todo en regiones geográficas de vientos constantes e intensos, este recurso natural renovable ofrece un rendimiento relativamente importante, seguro y ecológico</p>
+          </div>
+        </div>
+
+      
+          <div id="ventajas" class="section">
+            <h2>Ventajas</h2>
+            <ul>
+              <li>Limpieza. Es una forma medianamente ecologica de obtener energia, ya que mas alla de la instalacion de los parques elicos, que pueden arruinar un tanto el paisaje, no producen ningún contaminante atmosférico ni de otro tipo.</li>
+              <li>Seguridad. Los parques eólicos no presentan los riesgos a corto y largo plazo de la energía nuclear, ni representan daños a la salud. Se han reportado casos de molestias por el ruido que estos aparatos generan al rotar diariamente, y por eso se prefiere su instalación en regiones medianamente apartadas.</li>
+              <li>Aprovechamiento del terreno. Los parques eólicos pueden convivir con sembradíos u otros tipos de aprovechamiento del terreno, o incluso en regiones que no son cultivables de otra manera, como desiertos o costas marítimas o pendientes muy empinadas.
+</li>
+              <li>Costo. La tecnología eólica es muy económica en comparación con otras formas de obtención de electricidad.</li>
+            </ul>
+           <h2>Desventajas</h2>
+            <ul>
+              <li>Imprevisibilidad. El viento no sopla constantemente con la misma intensidad, por lo tanto la producción de energía es irregular y no se puede depender tan sólo de ella. Debe combinarse con algún otro método.</li>
+              <li>Poco rentable. La energía eólica será limpia y segura, pero no es muy eficiente. Se requieren grandes extensiones de terreno para implantar numerosas hélices y poder producir cantidades considerables de electricidad.</li>
+              <li>Impacto ambiental. Si bien no contaminan, los parques eólicos interrumpen el paisaje natural y tienen impacto en la fauna local, como las aves migratorias.</li>
+            </ul>
+
+          </div>
+
+          <div id="aplicaciones" class="section">
+            <h2>Ejemplos</h2>
+            <ul>
+<h2>Ejemplos</h2>
+<p align="justify">Existen conocidos parques eólicos como el Parque Eólico La Venta, ubicado en Oaxaca, México, que lo componen 104 aerogeneradores que aportan a la red eléctrica unos 85 Megawatts de electricidad.</p>
+<p align="justify">Otro perfecto ejemplo de aprovechamiento del viento lo constituyen los molinos de La Mancha, España, considerados patrimonio nacional e inmortalizados en la novela de Miguel de Cervantes Don Quijote de la Mancha, publicada en 1605.</h2>
+   
+  </ul>      
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarSeccion(id) {
+      const secciones = document.querySelectorAll('.section');
+      secciones.forEach(seccion => seccion.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+
+    function toggleToolbar() {
+      const menu = document.getElementById('toolbarMenu');
+      menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
+    }
+
+    // Cierra el menú si se hace clic fuera
+    document.addEventListener('click', function (e) {
+      const menu = document.getElementById('toolbarMenu');
+      const button = document.querySelector('.toolbar-button');
+      if (!menu.contains(e.target) && !button.contains(e.target)) {
+        menu.style.display = 'none';
+      }
+    });
+  </script>
+
+</body>
+</html>
